@@ -27,6 +27,11 @@
     # categoria 2
     $categoria2 = new Categorias(2, "Roupas femininas");
 
+    # item 1
+    $item1 = new Itens(1, 14, 69.99);
+    # item 2
+    $item2 = new Itens(2, 26, 120);
+
     echo "<h3>Exibindo usuários cadastrados no sistema: </h3>";
     $usuario1->ExibindoUser(1);
     $usuario2->ExibindoUser(2);
@@ -35,6 +40,10 @@
     echo "<h3>Exibindo produtos cadastrados no sistema: </h3>";
     $produto1->ExibindoProd(1);
     $produto2->ExibindoProd(2);
+    echo "<br><br>";
+    echo "<hr>";
+    echo "<h3>Exibindo itens cadastrados no sistema: </h3>";
+
     echo "<br><br>";
     echo "<hr>";
     echo "<h3>Exibindo vendas cadastradas no sistema: </h3>";
