@@ -2,6 +2,10 @@
     class Itens {
         public function __construct(private int $id_item, private int $item_quantidade, private float $item_preco_unitario){
         }
+        public function ExibindoItem(){
+            echo "<br><br>";
+            echo "<strong>ID do Item: </strong> {$this->getItemId()} <br> <strong>Preço Unitário:</strong> RS{$this->getItemPrecounit()} <br> <strong>Quantidade:</strong> {$this->getItemQuant()} <br>";
+        }
 
         #get
         public function getItemId(){

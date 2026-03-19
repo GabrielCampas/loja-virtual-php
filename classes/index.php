@@ -43,7 +43,8 @@
     echo "<br><br>";
     echo "<hr>";
     echo "<h3>Exibindo itens cadastrados no sistema: </h3>";
-
+    $item1->ExibindoItem();
+    $item2->ExibindoItem();
     echo "<br><br>";
     echo "<hr>";
     echo "<h3>Exibindo vendas cadastradas no sistema: </h3>";
