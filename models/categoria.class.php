@@ -4,7 +4,7 @@
             
         }
 
-        # get
+        #region get
         public function getCategoriaID(){
             $this->id_categoria;
         }
@@ -12,8 +12,9 @@
         public function getCategoriaData(){
             $this->categoria_descricao;
         }
+        #endregion
 
-        # set
+        #region set
         public function setCategoriaID(){
             $this->id = $id_categoria;
         }
@@ -21,6 +22,7 @@
         public function setCategoriaData(){
             $this->descricao = $categoria_descricao;
         }
+        #endregion
 
         # exibir
         public function ExibindoCategorias(int $contador){

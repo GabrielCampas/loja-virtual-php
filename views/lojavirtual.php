@@ -1,12 +1,14 @@
 <?php
-    require_once "produto.class.php";
-    require_once "itens.class.php";
-    require_once "usuario.class.php";
-    require_once "categoria.class.php";
-    require_once "venda.class.php";
+    require_once "../models/produto.class.php";
+    require_once "../models/itens.class.php";
+    require_once "../models/usuario.class.php";
+    require_once "../models/categoria.class.php";
+    require_once "../models/venda.class.php";
 
     echo "<h1>Loja virtual</h1>";
     echo "<hr>";
+
+    #region instanciando
     # user 1
     $usuario1 = new Usuario(1, "Pedro", "pedro@gmail.com", "50129", "Administrador");
     # user 2
@@ -31,6 +33,7 @@
     $item1 = new Itens(1, 14, 69.99);
     # item 2
     $item2 = new Itens(2, 26, 120);
+    #endregion
 
     echo "<h3>Exibindo usuários cadastrados no sistema: </h3>";
     $usuario1->ExibindoUser(1);
@@ -55,5 +58,4 @@
     echo "<h3>Exibindo categorias do sistema: </h3>";
     $categoria1->ExibindoCategorias(1);
     $categoria2->ExibindoCategorias(2);
-
 ?>
