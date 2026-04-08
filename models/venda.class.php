@@ -6,7 +6,7 @@
             
         }
 
-        # get
+        #region get
         public function getVendaID(){
             $this->id_venda;
         }
@@ -14,8 +14,9 @@
         public function getVendaData(){
             $this->venda_data;
         }
+        #endregion
 
-        # set
+        #region set
         public function setVendaID(){
             $this->id = $id_venda;
         }
@@ -23,6 +24,7 @@
         public function setVendaData(){
             $this->data = $venda_data;
         }
+        #endregion
 
         public function ExibindoVenda(int $contador){
             echo "<br><br>";

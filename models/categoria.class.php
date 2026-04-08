@@ -1,26 +1,28 @@
 <?php
     class Categorias {
-        public function __construct(private int $id_categoria, private string $categoria_descricao=""){
+        public function __construct(private int $id_categoria=0, private string $categoria_descricao=""){
             
         }
 
-        # get
+        #region get
         public function getCategoriaID(){
             $this->id_categoria;
         }
 
-        public function getCategoriaData(){
+        public function getDescricao(){
             $this->categoria_descricao;
         }
+        #endregion
 
-        # set
+        #region set
         public function setCategoriaID(){
             $this->id = $id_categoria;
         }
 
-        public function setCategoriaData(){
+        public function setDescricao(){
             $this->descricao = $categoria_descricao;
         }
+        #endregion
 
         # exibir
         public function ExibindoCategorias(int $contador){
