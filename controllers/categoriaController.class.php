@@ -1,7 +1,12 @@
 <?php
+<<<<<<< HEAD
     require_once "../models/conexao.class.php";
     require_once "../models/categoriaDAO.class.php";
     require_once "../models/categoria.class.php";
+=======
+    require_once "../models/conexao.class.php"
+    require_once "../models/categoriaDAO.class.php"
+>>>>>>> b9a7d4e0aaf4112b246b0777615732e6434f59fb
 
     class categoriaController{
         public function listar(){
@@ -16,6 +21,7 @@
             // apresentando os dados
             require_once "../views/listar_categorias.php";
         }
+<<<<<<< HEAD
 
         public function inserir(){
             $msg="";
@@ -45,5 +51,7 @@
                 die();
             }
         }
+=======
+>>>>>>> b9a7d4e0aaf4112b246b0777615732e6434f59fb
     }
 ?>

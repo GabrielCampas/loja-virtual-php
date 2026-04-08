@@ -5,6 +5,7 @@
 
 ?>
 
+<<<<<<< HEAD
 <div class="content">
     <div class="container">
         <div>
@@ -35,3 +36,19 @@
         </table>
     </div>
 </div>
+=======
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Descrição</th>
+    </tr>
+    <?php
+        foreach($retorno as $dado){
+            echo "<tr>";
+            echo "<td>{$dado->id_categoria}</td>";
+            echo "<td>{$dado->descricao}</td>";
+            echo "</tr>";
+        }
+    ?>
+</table>
+>>>>>>> b9a7d4e0aaf4112b246b0777615732e6434f59fb

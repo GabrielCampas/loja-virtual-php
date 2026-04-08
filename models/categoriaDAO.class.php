@@ -10,6 +10,7 @@
         public function Editar(){
 
         }
+<<<<<<< HEAD
         public function deletar($categoria){
             $sql = "DELETE FROM categorias WHERE id_categoria = ?";
             try{
@@ -24,6 +25,10 @@
                 $this->db = null;
                 return "Problema ao excluir a categoria.";
             }
+=======
+        public function Excluir(){
+
+>>>>>>> b9a7d4e0aaf4112b246b0777615732e6434f59fb
         }
         public function BuscarTodas(){
             $sql = "SELECT * FROM categorias";
@@ -45,6 +50,7 @@
         public function BuscarUma(){
 
         }
+<<<<<<< HEAD
         public function cadastrar($categoria){
             $sql = "INSERT INTO categorias (descritivo) VALUES(?)";
             try{
@@ -60,5 +66,8 @@
                 return "Problema ao cadastrar uma nova categoria.";
             }
         }
+=======
+        
+>>>>>>> b9a7d4e0aaf4112b246b0777615732e6434f59fb
     }
 ?>
